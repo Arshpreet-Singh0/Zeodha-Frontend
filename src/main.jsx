@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {BrowserRouter, Routes, Route} from "react-router-dom"
+import {HashRouter, Routes, Route} from "react-router-dom"
 import HomePage from './landing_page/home/HomePage'
 import './index.css'
 import Signup from './landing_page/signup/Signup.jsx'
@@ -15,7 +15,7 @@ import NotFound from './landing_page/NotFound.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename='/zeodha-frontend'>
+  <HashRouter >
   <Navbar/>
     <Routes>
       <Route path='/' element={<HomePage/>} />
@@ -29,5 +29,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='*' element={<NotFound />}/>
     </Routes>
     <Footer/>
-  </BrowserRouter>
+  </HashRouter>
 )
