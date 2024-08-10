@@ -1,0 +1,15 @@
+.responsive-image {
+    width: 100%; /* Default width for large screens */
+}
+
+@media (max-width: 992px) { /* For medium screens and smaller */
+    .responsive-image {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) { /* For small screens and smaller */
+    .responsive-image {
+        width: 95%;
+    }
+}
