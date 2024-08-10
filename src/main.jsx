@@ -15,7 +15,7 @@ import NotFound from './landing_page/NotFound.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <HashRouter basename='/zeodha-frontend'>
+  <HashRouter>
   <Navbar/>
     <Routes>
       <Route path='/' element={<HomePage/>} />
